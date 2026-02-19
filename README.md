@@ -4,8 +4,8 @@ This repository contains two Pokedex applications based on the [IBM Quantum fron
 
 ## 🚀 Live Demos
 
-- **Bob's Pokedex**: `https://ai-pokedex-bob.vercel.app`
-- **Claude's Pokedex**: `https://ai-pokedex-claude.vercel.app`
+- **Bob's Pokedex**: https://ai-pokedex-bob.vercel.app
+- **Claude's Pokedex**: https://ai-pokedex-claude.vercel.app
 
 ## 🛠️ Technology Stack
 
