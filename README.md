@@ -1,10 +1,8 @@
 # AI Pokedex Comparison
 
-This repository contains two Pokedex applications built with Next.js, showcasing different implementation approaches and features. Both apps are deployed on Vercel for easy comparison.
+This repository contains two Pokedex applications based on the [IBM Quantum frontend challenge](https://github.com/IBM/quantum-careers/tree/master/challenges/frontend).
 
 ## 🚀 Live Demos
-
-After deployment, your apps will be available at:
 
 - **Bob's Pokedex**: `https://ai-pokedex-bob.vercel.app`
 - **Claude's Pokedex**: `https://ai-pokedex-claude.vercel.app`
