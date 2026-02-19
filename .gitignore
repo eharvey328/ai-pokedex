@@ -1,0 +1,23 @@
+node_modules/
+**/coverage/
+.DS_Store
+*.log
+.swc
+dist
+.envrc
+.nvmrc
+
+# Editor directories and files
+.idea
+*.iml
+.vscode
+.out
+/tsconfig.json
+
+
+# yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
