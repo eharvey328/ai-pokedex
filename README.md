@@ -20,7 +20,7 @@ The final applications do not have any follow up responses. The app is the direc
 
 ## Comparison
 
-- The most obvious thing is core features don't work in Bob's application (search and clicking evolutions). Claude has all core features working. I think this is due to Claude's final step which ran a verification to build and serve the app and manually test functionality. Bob completed once the code was done.
+- The most obvious thing is the search don't work in Bob's application. Claude has all core features working. I think this is due to Claude's final step which ran a verification to build and serve the app and manually test functionality. Bob completed once the code was done.
 - They both have a surprisingly similar UI, even down to the header background blur.
 - They both decided animations are awesome (probably due to my prompt language).
   - Both app's animations are a bit messy, but Claude's are more polished.
@@ -40,6 +40,7 @@ The final applications do not have any follow up responses. The app is the direc
 - Using the latest version of React and Nextjs, but not the new features (e.g, no SSR/static rendering, server actions, or next caching)
 - Created a `prefetchPokemon` method but never uses it, lol
 - Not sure why it's using kebab-case instead of camelCase for files
+- Chose not to have the evolutions clickable in the details
 - Wrote some unit tests which is good to see, but only for `utils`...
 
 #### Claude's Solution
@@ -48,3 +49,4 @@ The final applications do not have any follow up responses. The app is the direc
   - Probably because it is typically nice to use in frontends for efficient data, but in this pokedex case, we will need all data from the API.
   - I find the ApolloClient caching much more challenging than the tanstack useQuery cache
 - Also like Bob, it uses the latest version of React and Nextjs, but not many new features.
+- There is a bug with the evolution ui in the details modal that removes the arrow from 1st to 2nd when the 3rd is selected. 
