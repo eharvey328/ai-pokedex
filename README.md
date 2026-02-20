@@ -20,7 +20,7 @@ The final applications do not have any follow up responses. The app is the direc
 
 ## Comparison
 
-- The most obvious thing is core features don't work in Bob's application (search and clicking evolutions). Claude has all core features working. I think this is due to Claude's final step was to run a verification step to build and serve the app and manually test functionality. Bob completed once the code was done.
+- The most obvious thing is core features don't work in Bob's application (search and clicking evolutions). Claude has all core features working. I think this is due to Claude's final step which ran a verification to build and serve the app and manually test functionality. Bob completed once the code was done.
 - They both have a surprisingly similar UI, even down to the header background blur.
 - They both decided animations are awesome (probably due to my prompt language).
   - Both app's animations are a bit messy, but Claude's are more polished.
