@@ -37,7 +37,7 @@ The final applications do not have any follow up responses. The app is the direc
 - I like that it is using the REST API with react query for client caching and `useInfiniteQuery` to handle the infinite scroll
 - Odd that it decided to use state management for something so simple
   - I would assume to try follow "best practices", but I don't see stores that often these days.
-- Using the latest version of React and Nextjs, but not any of new features (e.g, no SSR/static rendering, server actions, or next caching)
+- Using the latest version of React and Nextjs, but not the new features (e.g, no SSR/static rendering, server actions, or next caching)
 - Created a `prefetchPokemon` method but never uses it, lol
 - Not sure why it's using kebab-case instead of camelCase for files
 - Wrote some unit tests which is good to see, but only for `utils`...
