@@ -22,14 +22,31 @@ You are tasked with building a frontend application. Imagine this application se
 
 ## Comparison
 
-The most obvious thing is the search feature does not work in Bob's application. Claude has all core features working. I think this is due to Claude's final step was to run a verification step to build and serve the app and manually test functionality. Bob completed once the code was done.
-
-They both have a surprisingly similar UI, even down to the header background blur. They both decided animations are awesome (probably due to my prompt language). Both app's animations can get messy, but Claude's are more polished.
-
-I think it is interesting both also decided to open the Pokemon details in a modal instead of a dedicated route. This makes it so you cannot directly link to it which isn't ideal.
+- The most obvious thing is core features don't work in Bob's application (search and clicking evolutions). Claude has all core features working. I think this is due to Claude's final step was to run a verification step to build and serve the app and manually test functionality. Bob completed once the code was done.
+- They both have a surprisingly similar UI, even down to the header background blur.
+- They both decided animations are awesome (probably due to my prompt language).
+  - Both app's animations are a bit messy, but Claude's are more polished.
+- I think it is interesting both also decided to open the Pokemon details in a modal instead of a dedicated route. This makes it so you cannot directly link to it-- which is unideal.
 
 ### Overall
 
-Claude built the better app with better code. I think Bob could fix a few things with some follow up prompts, but from my experience, it struggles with that.
+- Claude built the better app with better code.
+- I think Bob could fix a few things with some follow up prompts, but from my experience, it struggles with that.
+- The code patterns used by each aren't bad, but if I saw these apps come from an application I would hesitate to hire either of them beyond a junior level.
 
-The code patterns used by each aren't bad, but if I saw these apps come from an application I would hesitate to hire either of them beyond a junior level.
+#### Bob's Solution
+
+- I like that it is using the REST API with react query for client caching and `useInfiniteQuery` to handle the infinite scroll
+- Odd that it decided to use state management for something so simple
+  - I would assume to try follow "best practices", but I don't see stores that often these days.
+- Using the latest version of React and Nextjs, but not any of new features (e.g, no SSR/static rendering, server actions, or next caching)
+- Created a `prefetchPokemon` method but never uses it, lol
+- Not sure why it's using kebab-case instead of camelCase for files
+- Wrote some unit tests which is good to see, but only for `utils`...
+
+#### Claude's Solution
+
+- Decided to use GraphQL instead of REST, which is interesting.
+  - Probably because it is typically nice to use in frontends for efficient data, but in this pokedex case, we will need all data from the API.
+  - I find the ApolloClient caching much more challenging than the tanstack useQuery cache
+- Also like Bob, it uses the latest version of React and Nextjs, but not many new features.
