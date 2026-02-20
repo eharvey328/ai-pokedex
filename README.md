@@ -26,7 +26,7 @@ The final applications do not have any follow up responses. The app is the direc
   - Both app's animations are a bit messy, but Claude's are more polished.
 - I think it is interesting both also decided to open the Pokemon details in a modal instead of a dedicated route. This makes it so you cannot directly link to it-- which is unideal.
 
-### Overall
+#### Overall
 
 - Claude built the better app with better code.
 - I think Bob could fix a few things with some follow up prompts, but from my experience, it struggles with that.
