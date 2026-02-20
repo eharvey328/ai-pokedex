@@ -50,5 +50,5 @@ The final applications do not have any follow up responses. The app is the direc
   - I find the ApolloClient caching much more challenging than the tanstack useQuery cache
 - Also like Bob, it uses the latest version of React and Nextjs, but not many new features.
 - Some visual bugs
-  - the evolution ui in the details modal that removes the arrow from 1st to 2nd when the 3rd is selected.
+  - the evolution ui in the details modal removes the arrow from 1st to 2nd when the 3rd is selected.
   - loading indicator in the details appears above the content instead of hiding the content on loading
