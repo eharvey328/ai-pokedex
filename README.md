@@ -7,7 +7,7 @@ This is a test between AIs using the [IBM Quantum Frontend Challenge](https://gi
 
 ## Results
 
-| AI     | Application                          | Write-up                       |
+| AI     | Application                          | Write-up (done by the AI)      |
 | ------ | :----------------------------------- | :----------------------------- |
 | Bob    | https://ai-pokedex-bob.vercel.app    | [README.md](/Bob/README.md)    |
 | Claude | https://ai-pokedex-claude.vercel.app | [README.md](/Claude/README.md) |
